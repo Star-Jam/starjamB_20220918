@@ -5,6 +5,5 @@ using UnityEngine;
 public enum BGMType
 {
     Title,
-    Game,
-    Result,
+    Game
 }

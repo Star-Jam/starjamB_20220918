@@ -45,11 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c16632e1f870154388617f4d4c09f9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _titleBGM: {fileID: 0}
-  _gameBGM: {fileID: 0}
-  _resultBGM: {fileID: 0}
-  _deathSFX: {fileID: 0}
-  _itemSFX: {fileID: 0}
+  _titleBGM: {fileID: 8300000, guid: d46a5e0c39737084d91b4cf8f000b995, type: 3}
+  _gameBGM: {fileID: 8300000, guid: 984ebda8015627e45abcee581d96dcfc, type: 3}
+  _deathSFX: {fileID: 8300000, guid: 1b45444ba0542be4c9c9d24ac305f526, type: 3}
+  _itemSFX: {fileID: 8300000, guid: b248532fea57b014988a40009975e766, type: 3}
 --- !u!82 &3658195115741114164
 AudioSource:
   m_ObjectHideFlags: 0

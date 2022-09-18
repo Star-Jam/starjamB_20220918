@@ -18,4 +18,11 @@ public class PlayerTest : MonoBehaviour
             death.Death();//Ç±ÇÒÇ»ä¥Ç∂Ç…èëÇ¢ÇƒÇ‡ÇÁÇ¶ÇÍÇŒÇ®Ç¡ÇØÅ[
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.TryGetComponent(out IDeath death))
+        {
+            death.Death();
+        }
+    }
 }
