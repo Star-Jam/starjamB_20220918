@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 7491406008243387859}
   m_Layer: 0
   m_Name: Stairs
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1979,7 +1979,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 790
+  m_VersionIndex: 802
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2095,6 +2095,7 @@ GameObject:
   - component: {fileID: 7491406008295094756}
   - component: {fileID: 7491406008295094757}
   - component: {fileID: 7491406008295094746}
+  - component: {fileID: 682483197}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -2110,7 +2111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7491406008295094747}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.33411172, y: -7.857091, z: 6.94353}
+  m_LocalPosition: {x: 2, y: -7.857091, z: 6.94353}
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2175,11 +2176,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7491406008295094747}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &682483197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7491406008295094747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31032329b31dcd14cadc8b0ed56c7f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7491406008297714801
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,7 +2209,7 @@ GameObject:
   - component: {fileID: 7491406008297714800}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2428,7 +2441,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 4154
+  m_VersionIndex: 4166
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2536,6 +2549,7 @@ GameObject:
   - component: {fileID: 7491406008565553130}
   - component: {fileID: 7491406008565553131}
   - component: {fileID: 7491406008565553128}
+  - component: {fileID: 1565767801}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -2616,11 +2630,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7491406008565553129}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 13.840113, z: 1}
+  m_Center: {x: 0, y: 6.4200544, z: 0}
+--- !u!114 &1565767801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7491406008565553129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77a35965d181afc4096c8661f1a5a458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7491406008681812639
 GameObject:
   m_ObjectHideFlags: 0
@@ -2637,7 +2663,7 @@ GameObject:
   - component: {fileID: 7491406008681812638}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2869,7 +2895,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1466
+  m_VersionIndex: 1478
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2981,7 +3007,7 @@ GameObject:
   - component: {fileID: 7491406008990714339}
   m_Layer: 0
   m_Name: Pipe
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5431,7 +5457,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 961
+  m_VersionIndex: 973
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -5594,15 +5620,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7026497931130774773, guid: 3085f2e36e61d1140ab4c22170976646, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.07390827
+      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 7026497931130774773, guid: 3085f2e36e61d1140ab4c22170976646, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7070909
+      value: -1.81
       objectReference: {fileID: 0}
     - target: {fileID: 7026497931130774773, guid: 3085f2e36e61d1140ab4c22170976646, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.18353057
+      value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: 7026497931130774773, guid: 3085f2e36e61d1140ab4c22170976646, type: 3}
       propertyPath: m_LocalRotation.w
