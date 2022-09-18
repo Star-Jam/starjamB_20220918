@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/hashimoto/Scene/TitleScene.unity
+    guid: 168510cbf214ef741915f28a3fd7b451
+  - enabled: 1
+    path: Assets/MasterScene/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

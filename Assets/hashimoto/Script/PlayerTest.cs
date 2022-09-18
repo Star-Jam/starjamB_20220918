@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// プレイヤーのテストScript
+/// </summary>
 public class PlayerTest : MonoBehaviour
 {
     Rigidbody _rb;
