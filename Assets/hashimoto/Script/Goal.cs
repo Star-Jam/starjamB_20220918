@@ -1,0 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+/// <summary>
+/// GoalInterfaceÇåpè≥ÇµÇΩScript
+/// </summary>
+public class Goal : MonoBehaviour,IGoal
+{
+    void IGoal.Goal()
+    {
+        Debug.Log("ÉSÅ[ÉãÇµÇ‹ÇµÇΩ");
+    }
+}

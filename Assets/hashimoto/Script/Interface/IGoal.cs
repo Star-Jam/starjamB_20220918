@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// BGMEnum
+/// ÉSÅ[ÉãÇÃInterface
 /// </summary>
-public enum BGMType
+public interface IGoal
 {
-    Title,
-    Game
+    void Goal();
 }
