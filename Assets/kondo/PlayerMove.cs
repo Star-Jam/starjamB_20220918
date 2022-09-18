@@ -37,4 +37,12 @@ public class PlayerMove : MonoBehaviour
         moveZ = Input.GetAxis("Vertical") * s;
         rb.AddForce(new Vector3(moveX, g, moveZ));
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.TryGetComponent(out IGoal goal))
+        {
+            goal.Goal();
+            Destroy(gameObject);
+        }
+    }
 }

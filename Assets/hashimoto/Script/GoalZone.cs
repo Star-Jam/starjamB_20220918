@@ -4,9 +4,9 @@ using UnityEngine;
 /// <summary>
 /// GoalInterface‚ğŒp³‚µ‚½Script
 /// </summary>
-public class Goal : MonoBehaviour,IGoal
+public class GoalZone : MonoBehaviour,IGoal
 {
-    void IGoal.Goal()
+    public void Goal()
     {
         Debug.Log("ƒS[ƒ‹‚µ‚Ü‚µ‚½");
     }
