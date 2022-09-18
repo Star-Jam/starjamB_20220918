@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerJump : MonoBehaviour
 {
+    public bool IsGround => isGround;
     [SerializeField]
     [Header("ジャンプ力")]
     float upForce = 200f;
-    public bool isGround; //着地しているかどうかの判定
-    public Rigidbody rb;
-
+    private bool isGround; //着地しているかどうかの判定
+    private Rigidbody rb;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
