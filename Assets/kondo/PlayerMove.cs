@@ -4,22 +4,37 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    private PlayerJump _pj;
     [SerializeField]
     [Header("スピード")]
-    float speed = 10.0f;
-    public Rigidbody rb;
+    float speed = 3f;
+    [SerializeField]
+    [Header("えあースピード")]
+    float airSpeed = 1f;
+    float moveX = 0f;
+    float moveZ = 0f;
+    private Rigidbody rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        _pj = GetComponent<PlayerJump>();
     }
-
-    void FixedUpdate()
+    void Update()
     {
-        float x = Input.GetAxis("Horizontal") * speed;
-        float z = Input.GetAxis("Vertical") * speed;
-        rb.AddForce(x, 0, z);
-
-
+        float s = 0;
+        float g = 0;
+        if (_pj.IsGround)
+        {
+            s = speed;
+        }
+        else
+        {
+            s = airSpeed;
+            g = -0.98f;
+        }
+        moveX = Input.GetAxis("Horizontal") * s;
+        moveZ = Input.GetAxis("Vertical") * s;
+        rb.AddForce(new Vector3(moveX, g, moveZ));
     }
 }
