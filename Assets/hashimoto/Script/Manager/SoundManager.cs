@@ -14,10 +14,6 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     AudioClip _gameBGM;
 
     [SerializeField]
-    [Header("リザルト")]
-    AudioClip _resultBGM;
-
-    [SerializeField]
     [Header("プレイヤーが死んだときの音")]
     AudioClip _deathSFX;
 
@@ -68,10 +64,6 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
 
             case BGMType.Game:
                 _audioSource.clip = _gameBGM;
-                break;
-
-            case BGMType.Result:
-                _audioSource.clip = _resultBGM;
                 break;
         }
 
