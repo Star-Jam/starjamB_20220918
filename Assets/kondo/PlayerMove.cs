@@ -14,6 +14,12 @@ public class PlayerMove : MonoBehaviour
     float moveX = 0f;
     float moveZ = 0f;
     private Rigidbody rb;
+    [SerializeField]
+    [Header("ゲームオーバーのパネル")]
+    GameObject _gameOverPanel;
+    [SerializeField]
+    [Header("ゲームクリアのパネル")]
+    GameObject _gameCrealPanel;
 
     void Start()
     {
@@ -43,6 +49,14 @@ public class PlayerMove : MonoBehaviour
         {
             goal.Goal();
             Destroy(gameObject);
+            _gameCrealPanel.SetActive(true);
+        }
+
+        if (other.TryGetComponent(out IDeath death))
+        {
+            death.Death();//こんな感じに書いてもらえればおっけー
+            Destroy(this.gameObject);
+            _gameOverPanel.SetActive(true);
         }
     }
 }
